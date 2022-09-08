@@ -1,7 +1,6 @@
 package com.hao.javaAndBigdata.record;
 
 import org.junit.Test;
-
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
