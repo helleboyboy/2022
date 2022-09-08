@@ -14,8 +14,8 @@ import java.util.Date;
  */
 public class T_Str2TS {
     /**
-     * 时间字符串转换为时间戳长整型类型，时间戳需要再除以1000L
      * @throws ParseException
+     * 时间字符串转换为时间戳长整型类型，时间戳需要再除以1000L
      */
     @Test
     public void testParseStr2Ts() throws ParseException {
@@ -29,8 +29,8 @@ public class T_Str2TS {
 
 
     /**
-     * 逐行读取文本内容并写入新文件
      * @throws IOException
+     * 逐行读取文本内容并写入新文件
      */
     @Test
     public void testInputAndOutputLine() throws IOException {
@@ -38,7 +38,7 @@ public class T_Str2TS {
         BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(location)));
         String outLocation = "D:\\test\\bbb.csv";
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outLocation)));
-        String line = null;
+        String line;
         while ((line = br.readLine()) != null){
             System.out.println(line);
             bw.write(line);
@@ -49,8 +49,8 @@ public class T_Str2TS {
     }
 
     /**
-     * 字节流读取文件内容
      * @throws IOException
+     * 字节流读取文件内容
      */
     @Test
     public void testInputStream() throws IOException {
